@@ -38,7 +38,7 @@ async function testConnection() {
 testConnection();
 
 // API Routes
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ message: 'Hello from shyama app' });
 });
 app.use('/admin', adminRoutes);
